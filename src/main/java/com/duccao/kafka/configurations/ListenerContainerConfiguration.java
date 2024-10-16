@@ -9,10 +9,10 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.kafka.config.ConcurrentKafkaListenerContainerFactory;
 
 @Configuration
-public class ConsumerConfiguration {
+public class ListenerContainerConfiguration {
 
   @Bean
-  public ConcurrentKafkaListenerContainerFactory<String, ExampleMessage> exampleMessageConsumer(
+  public ConcurrentKafkaListenerContainerFactory<String, ExampleMessage> exampleMessageListenerContainerFactory(
       KafkaConfigProperties properties
   ) {
     KafkaConsumerFactory<ExampleMessage> factory = new KafkaConsumerFactory<>();

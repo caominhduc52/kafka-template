@@ -8,7 +8,7 @@ import org.springframework.kafka.core.KafkaTemplate;
 import com.duccao.kafka.producers.KafkaTemplateFactory;
 
 @Configuration
-public class ProducerConfiguration {
+public class KafkaTemplateConfiguration {
 
   @Bean
   public KafkaTemplate<String, ExampleMessage> exampleMessageKafkaTemplate(KafkaConfigProperties properties) {

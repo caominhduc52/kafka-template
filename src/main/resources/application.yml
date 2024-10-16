@@ -1,0 +1,12 @@
+kafka:
+  bootstrapServer: 'http://localhost:9094'
+  groupId: ${GROUP_ID:1}
+  replyMessageMaximumSize: 100000000
+  maxRequestSize: 100000000
+  maxPartitionFetchBytes: 100000000
+  autoOffsetResetConfig: "earliest"
+  requestTimeoutMs: 60000
+
+spring:
+  kafka:
+    bootstrap-servers: 'http://localhost:9094'
